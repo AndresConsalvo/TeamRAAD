@@ -1,4 +1,4 @@
-# TeamRAD
+# TeamRAAD
 ## Members:
 * Dennis Kim (Team Leader)
 * Rayyan Merchant (Scrum Master)
