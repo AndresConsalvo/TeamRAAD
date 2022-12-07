@@ -2,15 +2,10 @@ import type { InferGetServerSidePropsType, NextPage } from "next";
 import Head from "next/head";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import { trpc } from "../utils/trpc";
-import { object, TypeOf } from "zod";
-import { map } from "@trpc/server/observable";
-import Image from "next/image";
 
 const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = (
   props
 ) => {
-  const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
-  const andres = trpc.example.andres.useQuery();
 
   if (!props.providers) return null;
 
