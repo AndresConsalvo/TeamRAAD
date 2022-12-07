@@ -1,6 +1,5 @@
-import { NextApiRequest, NextApiResponse, NextPage } from "next";
+import { NextPage } from "next";
 import { useSession } from "next-auth/react";
-import { getServerAuthSession } from "../server/common/get-server-auth-session";
 import {
   Box,
   Button,
@@ -9,7 +8,6 @@ import {
   HStack,
   IconButton,
   Input,
-  SkeletonText,
   Text,
 } from "@chakra-ui/react";
 import {
@@ -18,7 +16,6 @@ import {
   Marker,
   Autocomplete,
   DirectionsRenderer,
-  DirectionsService,
 } from "@react-google-maps/api";
 import { useRef, useState } from "react";
 import { FaLocationArrow, FaTimes } from 'react-icons/fa'
